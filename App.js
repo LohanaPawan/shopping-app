@@ -28,6 +28,9 @@ import Feather from 'react-native-vector-icons/Feather'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Octicons from 'react-native-vector-icons/Octicons'
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons'
+import Updates from './src/screens/Updates';
+import You from './src/screens/You';
+import Cart from './src/screens/Cart';
 
 // height and width of the screen
 const {height, width} = Dimensions.get('screen')
@@ -74,7 +77,7 @@ const App = () => {
         }}
         />
 
-<Tab.Screen name="Updates" component={Favorites} 
+<Tab.Screen name="Updates" component={Updates} 
          options={{
           tabBarIcon: ({focused}) => (
             <Ionicons
@@ -85,7 +88,7 @@ const App = () => {
           )
         }}
         />
-         <Tab.Screen name="You" component={Favorites} 
+         <Tab.Screen name="You" component={You} 
          options={{
           tabBarIcon: ({focused}) => (
             <Octicons
@@ -96,7 +99,7 @@ const App = () => {
           )
         }}
         />
-         <Tab.Screen name="Cart" component={Favorites} 
+         <Tab.Screen name="Cart" component={Cart} 
          options={{
           tabBarIcon: ({focused}) => (
             <MaterialCommunityIcons
